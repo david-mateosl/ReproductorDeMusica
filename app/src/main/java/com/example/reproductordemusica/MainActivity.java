@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
         if(listaCanciones.get(posicion).isPlaying()){
             listaCanciones.get(posicion).pause();
             play_pause.setBackgroundResource(R.drawable.play);
-            Toast.makeText(this, "Play", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Pausa", Toast.LENGTH_SHORT).show();
         }else{
             listaCanciones.get(posicion).start();
             play_pause.setBackgroundResource(R.drawable.pausa);
-            Toast.makeText(this, "Pausa", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Play", Toast.LENGTH_SHORT).show();
         }
 
     }
